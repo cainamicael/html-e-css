@@ -1,0 +1,54 @@
+Técnicas de css
+
+Reset padrão:
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+Hierarquia de níveis de especificação:
+
+    header.header1 > p { /*Altera somente o parágrafo que está dentro do header*/
+        background-color: blueviolet;
+    }
+
+    Se juntar o elemento com a classe, o nível de especificação fica maior
+
+    Quando usamos o !important, o elemento que está com a anotação, tem mais especificação
+
+Display:
+
+Divs, p... tem display block, ou seja, joga para baixo
+Span, a... tem display inline. ou seja, sempre vai para o lado
+Inline-block: Sempre fica na masma linha, se tiver espaço. Se não, cai para baixo
+
+Para trabalhar com porcentagem, usamos a seguinte técnica:
+
+    html, body {
+        height: 100%;
+    }
+
+    .el1 {
+        display: inline-block;
+        width: 50%;
+        height: 40%;
+        background-color: blue;
+        border: 10px solid #f5e;
+    }
+
+Alinhamento vertical: vertical-align: middle;
+
+Tamanho máximo e mínimo:
+
+    .one {
+        width: 100%;
+        max-width: 300px;
+
+        height: 4%;
+        min-height: 80px;
+        
+        background: green;
+    }
+
