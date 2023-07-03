@@ -8,12 +8,13 @@ html, body {
     height: 100%;
 }
 
-.one {
+.background {
     width: 100%;
-    max-width: 300px;
-
-    height: 4%;
-    min-height: 80px;
+    height: 520px;
+    background-color: black;
+    background-image: url('minha-imagem.jpg');
     
-    background: green;
+    background-size: contain; /*Tenta adaptar a imagem com o tamanho, sem distorcer, mas o que não der, repete*/
+    background-position: center;
+    background-repeat: no-repeat;
 }

@@ -52,3 +52,69 @@ Tamanho máximo e mínimo:
         background: green;
     }
 
+Espaçamento externo e interno:
+
+Margins e paddings (os parâmetros funcionam com os dois):
+
+Individuais:
+
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+
+Com 4 valores:
+
+    margin: topo direita baixo esquerda;
+
+Com 2 valores:
+
+    margin cima/baixo direita/esquerda;
+
+Overflow:
+
+    .pai {
+        width: 100px;
+        height: 100px;
+        background: green;
+        overflow-y: auto;
+        overflow-X: hidden;
+    }
+
+    .filho /*dentro da div pai*/ {
+        width: 100px;
+        height: 200px;
+        background-color: red;
+    }
+
+Background-image:
+
+    .background {
+        width: 100%;
+        height: 300px;
+        background-color: grey;
+        background-image: url('minha-imagem.jpg');
+    }
+
+Ajustando imagem:
+
+    background-size: 100% 100%; /*Força a imagem a se estender por completo*/
+    background-size: cover; /*Faz com que a imagem se adapte ao tamanho da div, mas pode ainda sim ter cortes*/
+    background-size: contain; /*Tenta adaptar a imagem com o tamanho, sem distorcer, mas o que não der, repete*/
+
+    background-position: center; /*Imagem ajustada ao centro*/
+
+    background-position: left; /*Imagem ajustada à esquerda*/
+    background-position: left top; /*Imagem ajustada à esquerda e em cima*/
+    background-position: 30px 70px;
+
+    background-repeat: no-repeat; /*Para evitar repatição*/
+     background-repeat: repeat-x; /*Só em um eixo*/
+
+Uso do ajuste:
+
+    background-size: contain; /*Tenta adaptar a imagem com o tamanho, sem distorcer, mas o que não der, repete*/
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    A imagem fica alinhada ao centro da div, e o que não preencher, fica com uma borda
+    Usado geralmente na responsividade
