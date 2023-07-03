@@ -118,3 +118,75 @@ Uso do ajuste:
     
     A imagem fica alinhada ao centro da div, e o que não preencher, fica com uma borda
     Usado geralmente na responsividade
+
+Fontes:
+
+    p {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 30px;
+        font-weight: bold; /*No quesito de espessura*/
+        font-style: italic;
+    }
+
+Seletor *: 
+
+    Quando quero me referir a todos os elementos, sejam todos mesmo ou todos dentro de um elemento, como uma div por exemplo
+
+    div * {
+        color: aqua;
+    }
+
+    ou:
+
+    div > * { /*Pega estritatente o que tá dentro da div*/
+        color: aqua;
+    }
+
+Posições: Position static (padrão)
+
+Position relative (Relativa à posição atual do elemento): 
+
+    .box {
+        position: relative; /*Pega exatamente onde o elemento está. Quando uso isso, liberam-se essas propriedades*/
+        left: 30px;
+        right: 30px;
+        top: 30px;
+        bottom: 30px;
+
+
+        width: 500px;
+        height: 500px;
+        background-color: green;
+    }
+
+Position absolute:
+
+    .box {
+        position: absolute; /*Posição inicial*/
+        left: 30px;
+        top: 30px;
+        width: 500px;
+        height: 500px;
+        background-color: green;
+    }
+
+Importante:
+
+.box {
+        position: relative;
+        left: 200px;
+
+        width: 500px;
+        height: 500px;
+        background-color: green;
+    }
+
+    .box p {
+        position: absolute; /*A posição absoluta de um filho é a posição do pai*/
+        left: 0px;
+        top: 0px;
+
+        color: aliceblue;
+    }
+
+
