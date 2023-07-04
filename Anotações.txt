@@ -234,7 +234,7 @@ Opacidade e borda arredondada:
         border-top-right-radius: 65px;
     }
 
-Transform (Técnica de centralização):
+Transform e técnica de centralização:
 
     .box {
         width: 500px;
@@ -261,7 +261,16 @@ Mais propriedades do transform:
         border-radius: 32px;
     }
 
-Flutoação:
+Outra técnica de centralização (responsiva): 
+
+    .container {
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 100%;
+        padding: 0 2%;
+    }
+
+Flutuação:
 
     .logo {
         float: left; /*Não cria nenhum espaçamento extra*/
@@ -318,5 +327,45 @@ css:
         width: 33.3%;
         height: 100px;
         background: red;
+    }
+
+Display flex (Modo mais moderno de alinhar um ao lado do outro - Pode ser melhor que o float):
+
+    .container {
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 100%;
+        padding: 0 2%;
+        background-color: black;
+
+        display: flex; /*Se o elemento pai tem display flez, todos os elementos filhos sempre vão ficar um do lado do outro, alinhado*/
+    }
+
+    .content {
+        width: 33.3%;
+        height: 400px;
+        background-color: red;
+    }
+
+Pode haver um problema: Se estou usando a largura de 33.3%, só suporta até 3 elementos 1 do lado do outro. só que mesmo se eu tiver 4 elementos, o display flex mantem ainda um do lado do outro. Para resolver, usamos: flex-wrap: wrap
+
+    .container {
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 100%;
+        padding: 0 2%;
+        background-color: black;
+
+        display: flex; /*Se o elemento pai tem display flez, todos os elementos filhos sempre vão ficar um do lado do outro, alinhado*/
+        flex-wrap: wrap;
+
+
+    }
+
+    .content {
+        width: 33.3%;
+        height: 400px;
+        background-color: red;
+        border: 1px solid black;
     }
 
