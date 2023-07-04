@@ -13,17 +13,15 @@ html, body {
     max-width: 1200px;
     width: 100%;
     padding: 0 2%;
-    background-color: black;
+    background-color: green;
 
-    display: flex; /*Se o elemento pai tem display flez, todos os elementos filhos sempre vão ficar um do lado do outro, alinhado*/
-    flex-wrap: wrap;
-
-
+    text-align: center;
 }
 
 .content {
-    width: 33.3%;
-    height: 400px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
     background-color: red;
     border: 1px solid black;
 }

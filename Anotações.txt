@@ -371,3 +371,23 @@ Pode haver um problema: Se estou usando a largura de 33.3%, só suporta até 3 e
         border: 1px solid black;
     }
 
+Text align (Não funciona só com texto, mas tem que ter display inline-block ou inline):
+
+    .container {
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 100%;
+        padding: 0 2%;
+        background-color: green;
+
+        text-align: center;
+    }
+
+    .content {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        border: 1px solid black;
+    }
+
