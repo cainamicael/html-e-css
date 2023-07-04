@@ -8,9 +8,33 @@ html, body {
     height: 100%;
 }
 
-.border {
-    width: 200px;
-    height: 200px;
-    
-    border-left: 20px solid red;
+.clear{clear:both;}
+
+header {
+    background-color: aqua;
+}
+
+.logo {
+    float: left; /*Não cria nenhum espaçamento extra*/
+}
+
+nav {
+    float: right; 
+}
+
+ul {
+    list-style-position: inside;
+}
+
+.box {
+    margin: 30px 0;
+    background-color: blue;
+    padding: 90px 0;
+}
+
+.content {
+    float: left;
+    width: 33.3%;
+    height: 100px;
+    background: red;
 }
