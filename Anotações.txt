@@ -331,6 +331,8 @@ css:
 
 Display flex (Modo mais moderno de alinhar um ao lado do outro - Pode ser melhor que o float):
 
+O display flex ajusta a altura também
+
     .container {
         margin: 0 auto;
         max-width: 1200px;
