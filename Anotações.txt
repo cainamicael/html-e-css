@@ -426,3 +426,12 @@ Focus (utilizado para input): Quando clicar nele, acontece o que eu setar
         height: 200px;
     }
 
+Dizendo que alguma propriedade pode ser aplicada só quando tiver ambas as classes (Vulgo, CSS Orientado à Objetos):
+
+    .color.bg {
+        color: green;
+        background-color: red;
+    }
+
+    <div class="color bg">Olá</div>
+
