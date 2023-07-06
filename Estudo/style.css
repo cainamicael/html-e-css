@@ -8,20 +8,14 @@ html, body {
     height: 100%;
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 2%;
-    background-color: green;
-
-    text-align: center;
+input {
+    width: 100px;
+    width: 100px;
+    background-color: aqua;
+    transition: 1s;
 }
 
-.content {
-    display: inline-block;
+input:focus {
     width: 200px;
     height: 200px;
-    background-color: red;
-    border: 1px solid black;
 }

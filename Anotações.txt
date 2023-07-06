@@ -391,3 +391,38 @@ Text align (Não funciona só com texto, mas tem que ter display inline-block ou
         border: 1px solid black;
     }
 
+Hover e Transition:
+
+    .box {
+        width: 500px;
+        height: 500px;
+        background-color: red;
+        transition: 1s;
+    }
+
+    .conteudo {
+        transition: 1s;
+    }
+
+    .box:hover {
+        background-color: green;
+        width: 700px;
+    }
+
+    .box:hover .conteudo {
+        color: white;
+    }
+
+Focus (utilizado para input): Quando clicar nele, acontece o que eu setar
+
+    input {
+        width: 100px;
+        width: 100px;
+        transition: 1s;
+    }
+
+    input:focus {
+        width: 200px;
+        height: 200px;
+    }
+
