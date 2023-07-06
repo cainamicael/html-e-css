@@ -7,6 +7,7 @@
 
 html, body {
     height: 100%;
+    background-color: #f5f5f5;
 }
 
 /*classes auxiliares*/
@@ -55,12 +56,27 @@ nav.menu-desktop ul li a {
     min-height: 600px;
     background-image: url('../images/bg1.jpg');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     position: relative;
 }
 
+.overlay {
+    width: 100%;
+    min-height: 600px;
+    background-color: #010102;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
 .conteudo-sessao1 {
     text-align: center;
+    position: relative;
+    padding: 30px;
 }
 
 .conteudo-sessao1 h1{
@@ -85,6 +101,111 @@ nav.menu-desktop ul li a {
     border: 0;
     border-radius: 20px;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 
+#id1 {
+    color: white;
+}
+
+/*sessao 2*/
+.sessao2 {
+    width: 100%;
+    min-height: 400px;
+}
+
+.conteudo-sessao2 {
+    text-align: center;
+    padding: 40px;
+}
+
+.titulo h2 {
+    color: #31d6ae;
+}
+
+.single {
+    margin-top: 70px;
+    width: 33.3%;
+    float: left;
+    padding: 0 10px;
+}
+
+.single p i {
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: #7e5f5c;
+}
+
+/*Sessao 3*/
+.sessao3 {
+    width: 100%;
+    height: 500px;
+    background-color: #dfe6e6;
+}
+
+.conheca {
+    width: 45%;
+    float: left;
+}
+
+.conheca .box-equipe {
+    width: 90%;
+}
+
+
+.box-equipe .texto {
+    width: 60%;
+}
+
+.box-equipe .texto p:nth-of-type(1) {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.box-equipe .texto p:nth-of-type(2) {
+    font-size: 15px;
+    text-align: justify;
+}
+
+.sobre {
+    width: 55%;
+    float: left;
+}
+
+/*sessao 4*/
+.sessao4 {
+    width: 100%;
+    background-color: #31d6ae;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 40px;
+}
+
+.titulo-sessao4 {
+    width: 50%;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+form {
+    width: 50%;
+    text-align: center;
+}
+
+input[type=email] {
+    width: 60%;
+    height: 35px;
+    background-color: #dfe6e6;
+    border: 0;
+}
+
+input[type=submit] {
+    width: 20%;
+    height: 35px;
+    background-color: #00755c;
+    color: white;
+    border: 0;
+}
