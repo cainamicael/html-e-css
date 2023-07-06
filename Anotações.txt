@@ -538,5 +538,54 @@ Criando tags:
 
 
 
-Design responsivo:
+Design responsivo:    
 
+Meta tag: <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+Mobile first: O objetivo principal é começar desenvolvendo para o menor tamanho de tela
+
+Medias queries (mobile first):
+
+html:
+
+    <div class="container"> <!--Centralizar-->
+        <div class="box">
+            <div class="box-single"></div>
+            <div class="box-single"></div>
+            <div class="box-single"></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+css:
+
+    .clear {clear: both;}
+
+    .container {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .box-single {
+        width: 100%;
+        height: 300px;
+        background-color: green;
+        border: 1px solid black;
+        float: left;
+    }
+
+    @media screen and (min-width: 768px) {
+        .box-single {
+            width: 50%
+        }
+    }
+
+    @media screen and (min-width: 1024px){
+        .box-single {
+            width: 33.3%;
+        }
+    }
+
+Midia queries (web first) {
+    
+}
