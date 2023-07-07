@@ -267,6 +267,7 @@ section.inscricao {
     height: 40px;
     border: 1px solid #ccc;
     display: inline-block;
+    padding-left: 10px;
 }
 
 .inscricao-form input[type=submit] {
