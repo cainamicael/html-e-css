@@ -339,9 +339,16 @@ section.cartoes {
     }
 
     .w33 {
-        width: 100%;
+        width: 50%;
         margin-bottom: 40px;
     }
 
 }
 
+@media screen and (max-width: 540px){
+    .w33 {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+}
