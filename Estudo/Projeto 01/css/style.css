@@ -196,22 +196,21 @@ section.sobre-equipe > .container {
 
 .avatar-box {
     margin-top: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    
 }
 
 .avatar-box .img-avatar {
-    display: inline-block;
-    width: 70px;
-    height: 70px;
+    min-width: 70px;
+    min-height: 70px;
     border-radius: 50%;
     background-size: 100% 100%;
     background-position: center;
 }
 
 .descricao-avatar {
-    width: calc(100% - 70px);
-    padding: 0 10px;
-    display: inline-block;
-    vertical-align: top;
+    padding: 10px 10px;
 }
 
 .descricao-avatar h3 {
@@ -240,7 +239,7 @@ section.sobre-equipe > .container {
     .box-icone-single {
         width: 100%;
     }
-
+ 
     .equipe-container {
         width: 100%;
     }
@@ -248,5 +247,5 @@ section.sobre-equipe > .container {
     .sobre-container {
         width: 100%;
         margin-top: 30px;
-    } 
+    }
 }
