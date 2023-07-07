@@ -31,8 +31,11 @@ header {
     float: left;
 }
 
-.logo h2 {
-    font-weight: 300;
+.logo a {
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+    font-size: 25px;
 }
 
 nav.menu-desktop {
@@ -137,9 +140,9 @@ section.diferenciais {
 .line-text > div {
     position: absolute;
     left: 0;
-    top: 0;
+    top: -5px;
     width: 93px;
-    height: 2px;
+    height: 3px;
     background-color: #52aaa7;
 }
 
@@ -171,56 +174,7 @@ section.diferenciais {
 }
 
 /*sessao 3*/
-section.sobre-equipe {
-    padding: 30px 0;
-    background-color: rgb(225, 225, 225);
-}
 
-.sobre-equipe .equipe-container {
-    width: 50%;
-    float: left;
-}
-
-.sobre-equipe .sobre-container {
-    width: 50%;
-    float: left;
-}
-
-.avatar {
-    margin-top: 20px;
-}
-
-.avatar .imagem {
-    width: 70px;
-    height: 70px;
-    background-color: #52aaa7;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-.avatar .descricao {
-    max-width: calc(98% - 70px); /*Para compensar o padding do display inline-block*/
-    display: inline-block;
-    position: absolute;
-    padding-top: 12px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.descricao h3 {
-    font-size: 15px;
-    font-style: italic;
-    font-weight: bold;
-}
-
-.descricao p {
-    font-weight: lighter;
-}
-
-.sobre-container p {
-    margin-top: 15px;
-    font-weight: lighter;
-}
 
 /*responsivo*/
 @media screen and (max-width: 768px){
