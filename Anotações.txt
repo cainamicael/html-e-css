@@ -786,3 +786,9 @@ css:
         font-weight: normal;
         font-size: 27px;
     }
+
+Alinhando divs dentro de uma div: 
+
+    .avatar-box > div { /*A div que contem as outras*/
+        vertical-align: middle;
+    }

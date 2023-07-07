@@ -195,22 +195,27 @@ section.sobre-equipe > .container {
 }
 
 .avatar-box {
-    margin-top: 15px;
-    display: flex;
-    flex-wrap: nowrap;
-    
+    margin-top: 30px;
+    text-align: left;
+}
+
+.avatar-box > div {
+    vertical-align: middle;
 }
 
 .avatar-box .img-avatar {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background-size: 100% 100%;
     background-position: center;
+    background-size: 100% 100%;
+    display: inline-block;
 }
 
 .descricao-avatar {
-    padding: 10px 10px;
+    width: calc(98% - 70px);
+    display: inline-block;
+
 }
 
 .descricao-avatar h3 {
