@@ -199,6 +199,7 @@ section.sobre-equipe > .container {
 
 .sobre-container p {
     padding-top: 15px;
+    font-size: 15px;
     font-weight: lighter;
 }
 
@@ -207,4 +208,16 @@ section.sobre-equipe > .container {
     .box-icone-single {
         width: 100%;
     }
+
+    /* section.sobre-equipe > .container {
+        display: block;
+    }
+
+    .equipe-container {
+        width: 100%;
+    }
+
+    .sobre-container {
+        width: 100%;
+    } */
 }
