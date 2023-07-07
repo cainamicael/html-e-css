@@ -20,6 +20,13 @@ html, body {
 
 .clear {clear: both;}
 
+.w50 {
+    width: 50%;
+    float: left;
+}
+
+.center {text-align: center;}
+
 /*classes do site*/
 
 /*header*/
@@ -127,7 +134,7 @@ section.main-bg button {
 }
 
 .main-bg button:hover {
-    background-color: #1e5a7f;
+    background-color: #1d6c64;
 }
 
 /*sessao 2*/
@@ -241,6 +248,37 @@ section.sobre-equipe > .container {
     font-weight: lighter;
 }
 
+/*sessao 4*/
+section.inscricao {
+    padding: 25px 0;
+    background-color: #52aaa7;
+}
+
+.inscricao-texto {
+    color: white;
+    font-size: 22px;
+    padding: 0 10px;
+    font-weight: lighter;
+}
+
+.inscricao-form input[type=email]{
+    width: calc(100% - 120px);
+    background-color: white;
+    height: 40px;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+
+.inscricao-form input[type=submit] {
+    width: 120px;
+    height: 40px;
+    background-color: #1d6c64;
+    border: 0;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+}
+
 /*responsivo*/
 @media screen and (max-width: 768px){
     .box-icone-single {
@@ -254,6 +292,11 @@ section.sobre-equipe > .container {
     .sobre-container {
         width: 100%;
         margin-top: 30px;
+    }
+
+    .w50 {
+        width: 100%;
+        margin: 10px 0;
     }
 }
 
