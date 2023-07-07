@@ -59,6 +59,8 @@ nav.menu-desktop a {
     text-decoration: none;
     font-weight: lighter;
     transition: .5s;
+
+    
 }
 
 nav.menu-desktop a:hover {
@@ -66,3 +68,163 @@ nav.menu-desktop a:hover {
 }
 
 /*sessão 1*/
+section.main-bg {
+    width: 100%;
+    padding: 100px 0;
+    background-image: url(../images/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.6;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+section.main-bg > .container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+section.main-bg h2 {
+    text-align: center;
+    color:  #52aaa7;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+section.main-bg p {
+    text-align: left;
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+    padding-top: 25px;
+}
+
+section.main-bg button {
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    margin-top: 25px;
+    border-radius: 20px;
+    border: 0;
+    background-color: #52aaa7;
+    color: white;
+    font-weight: normal;
+}
+
+/*sessao 2*/
+section.diferenciais {
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.line-text {
+    display: inline-block;
+    position: relative;
+}
+
+.line-text > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 93px;
+    height: 2px;
+    background-color: #52aaa7;
+}
+
+.line-text h2 {
+    color: #52aaa7;
+    font-weight: normal;
+    font-size: 27px;
+}
+
+.icones-diferenciais {
+    margin-top: 30px;
+}
+
+.box-icone-single {
+    width: 33.3%;
+    padding: 0 10px;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.box-icone-single h2 {
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+.box-icone-single p {
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+/*sessao 3*/
+section.sobre-equipe {
+    padding: 30px 0;
+    background-color: rgb(225, 225, 225);
+}
+
+.sobre-equipe .equipe-container {
+    width: 50%;
+    float: left;
+}
+
+.sobre-equipe .sobre-container {
+    width: 50%;
+    float: left;
+}
+
+.avatar {
+    margin-top: 20px;
+}
+
+.avatar .imagem {
+    width: 70px;
+    height: 70px;
+    background-color: #52aaa7;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.avatar .descricao {
+    max-width: calc(98% - 70px); /*Para compensar o padding do display inline-block*/
+    display: inline-block;
+    position: absolute;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.descricao h3 {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.descricao p {
+    font-weight: lighter;
+}
+
+.sobre-container p {
+    margin-top: 15px;
+    font-weight: lighter;
+}
+
+/*responsivo*/
+@media screen and (max-width: 768px){
+    .box-icone-single {
+        width: 100%;
+    }
+}
