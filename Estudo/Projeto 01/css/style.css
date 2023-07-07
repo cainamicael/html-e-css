@@ -25,6 +25,11 @@ html, body {
     float: left;
 }
 
+.w33 {
+    width: 33.3%;
+    float: left;
+}
+
 .center {text-align: center;}
 
 /*classes do site*/
@@ -280,6 +285,39 @@ section.inscricao {
     cursor: pointer;
 }
 
+/*sessao 5*/
+section.cartoes {
+    padding: 50px 0;
+}
+
+.cartao-single {
+    padding: 0 20px;
+}
+
+.img-cartao {
+    width: 100%;
+    height: 270px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.cartao-single h3 {
+    padding-top: 15px;
+}
+
+.cartao-single p {
+    padding-top: 3px;
+}
+
+.linha-cartao {
+    width: 100%;
+    height: 3px;
+    margin-top: 15px;
+    background-color: #1d6c64;
+}
+
+
 /*responsivo*/
 @media screen and (max-width: 768px){
     .box-icone-single {
@@ -299,5 +337,11 @@ section.inscricao {
         width: 100%;
         margin: 10px 0;
     }
+
+    .w33 {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
 }
 
