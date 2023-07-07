@@ -197,6 +197,10 @@ section.sobre-equipe > .container {
     width: 50%;
 }
 
+.sobre-container p {
+    padding-top: 15px;
+    font-weight: lighter;
+}
 
 /*responsivo*/
 @media screen and (max-width: 768px){
