@@ -18,6 +18,15 @@
                 <li><a href="#">Contato</a></li>
             </ul>
         </nav>
+
+        <nav class="menu-mobile">
+            <h2><i id="burger" class="fa fa-bars"></i></h2> <!--ícone de hamburguer-->
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li class="selected" ><a href="./sobre.html">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
         <div class="clear"></div>
     </div>
 </header>
@@ -49,5 +58,20 @@
         <p class="center">Todos os direitos reservados</p>
     </div>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script>
+    $('nav.menu-mobile h2').click(() => {
+        if($('#burger').hasClass('fa fa-bars')) {
+            $('#burger').removeClass('fa fa-bars')
+            $('#burger').addClass('fa fa-close')
+        } else {
+            $('#burger').removeClass('fa fa-close')
+            $('#burger').addClass('fa fa-bars')
+        }
+
+        $('nav.menu-mobile ul').slideToggle()
+    })
+</script>
 </body>
 </html>
