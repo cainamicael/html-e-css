@@ -110,6 +110,7 @@ nav.menu-mobile li {
 
 nav.menu-mobile li.selected {
     background-color: rgba(14, 143, 155, 0.2);
+    text-decoration: none;
 }
 
 nav.menu-mobile a {
@@ -422,6 +423,21 @@ section.banner-sobre p {
     text-align: justify;
 }
 
+/*sessao2*/
+section.sessao2-sobre {
+    padding: 40px 0;
+}
+
+section.sessao2-sobre img {
+    max-width: 40%;
+    float: left;
+    padding-right: 8px;
+}
+
+section.sessao2-sobre p {
+    margin-bottom: 30px;
+    font-weight: lighter;
+}
 
 /*responsivo*/
 @media screen and (max-width: 768px){
@@ -454,6 +470,17 @@ section.banner-sobre p {
 
     footer.footer1 {
         text-align: center;
+    }
+
+    section.banner-sobre p {
+        max-width: 100%;
+    }
+
+    section.sessao2-sobre img {
+        float: none;
+        padding: 10px;
+        max-width: 100%;
+        margin-bottom: 20px;
     }
 }
 
