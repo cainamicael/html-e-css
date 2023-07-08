@@ -886,3 +886,5 @@ Mudando o ícone:
             $('nav.menu-mobile ul').slideToggle()
         })
     </script>
+
+Parallax: background-attachment: fixed;
