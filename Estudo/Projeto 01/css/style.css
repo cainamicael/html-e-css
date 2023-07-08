@@ -32,7 +32,7 @@ html, body {
 
 .center {text-align: center;}
 
-/*classes do site*/
+/*classes da pagina home*/
 
 /*header*/
 header {
@@ -389,6 +389,37 @@ footer.footer2 {
 .footer2 p {
     color: white;
     font-weight: lighter;
+}
+
+/*classes da pagina sobre*/
+/*sessao 1*/
+section.banner-sobre {
+    padding: 40px 0;
+    background-image: url(../images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+section.banner-sobre > div.container {
+    position: relative;
+    z-index: 2;
+}
+
+section.banner-sobre h2 {
+    color: #52aaa7;
+    font-weight: normal;
+    font-size: 35px;
+}
+
+section.banner-sobre p {
+    max-width: 60%;
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+    padding-top: 15px;
+    text-align: justify;
 }
 
 
