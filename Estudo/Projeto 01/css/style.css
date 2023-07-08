@@ -471,6 +471,39 @@ section.parallax {
     text-align: justify;
 }
 
+/*section4*/
+section.cards {
+    padding: 40px;
+    position: relative;
+}
+
+.cards .line-text {
+    display: block;
+}
+
+.cards .card {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cards .img-card {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #1d6c64;
+}
+
+.card p {
+    padding: 10px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
 /*responsivo*/
 @media screen and (max-width: 768px){
     .box-icone-single {
