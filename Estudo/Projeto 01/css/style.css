@@ -316,7 +316,7 @@ section.cards {
 
 /*footer1*/
 footer.footer1 {
-    padding: 30px 0;
+    padding: 20px 0;
     background-color: #52aaa7;
     color: white;
 }
@@ -340,6 +340,16 @@ footer.footer1 a {
     padding-right: 15px;
 }
 
+footer.footer2 {
+    background-color: #1d6c64;
+    padding: 20px 0;
+}
+
+.footer2 p {
+    color: white;
+    font-weight: lighter;
+}
+
 
 /*responsivo*/
 @media screen and (max-width: 768px){
@@ -356,7 +366,7 @@ footer.footer1 a {
         margin-top: 30px;
     }
 
-    .w50 {
+    .w50, .w33 {
         width: 100%;
         margin: 10px 0;
     }
@@ -368,5 +378,9 @@ footer.footer1 a {
 
     .card-single img {
         height: auto;
+    }
+
+    footer.footer1 {
+        text-align: center;
     }
 }
