@@ -441,8 +441,11 @@ section.sessao2-sobre p {
 
 /*sessao3*/
 section.parallax {
-    background-color: #2c5255;
+    background-image: url(../images/img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 40px;
+    background-attachment: fixed;
 }
 
 .parallax > div.container {
