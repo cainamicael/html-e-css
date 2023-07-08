@@ -20,6 +20,11 @@ html, body {
 
 .clear {clear: both;}
 
+.w33 {
+    width: 33.3%;
+    float: left;
+}
+
 .w50 {
     width: 50%;
     float: left;
@@ -307,6 +312,32 @@ section.cards {
     font-size: 16px;
     padding-bottom: 20px;
     border-bottom: 2px solid #ccc;
+}
+
+/*footer1*/
+footer.footer1 {
+    padding: 30px 0;
+    background-color: #52aaa7;
+    color: white;
+}
+
+footer.footer1 h2 {
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+footer.footer1 p {
+    margin-top: 8px;
+    font-weight: lighter;
+    padding-right: 15px;
+}
+
+footer.footer1 a {
+    display: block;
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+    padding-right: 15px;
 }
 
 
