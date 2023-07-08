@@ -20,7 +20,7 @@
         </nav>
 
         <nav class="menu-mobile">
-            <h2><i class="fa fa-bars"></i></h2> <!--ícone de hamburguer-->
+            <h2><i id="burger" class="fa fa-bars"></i></h2> <!--ícone de hamburguer-->
             <ul>
                 <li class="selected"><a href="./index.html">Home</a></li>
                 <li><a href="./sobre.html">Sobre</a></li>
@@ -218,6 +218,14 @@
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script>
     $('nav.menu-mobile h2').click(() => {
+        if($('#burger').hasClass('fa fa-bars')) {
+            $('#burger').removeClass('fa fa-bars')
+            $('#burger').addClass('fa fa-close')
+        } else {
+            $('#burger').removeClass('fa fa-close')
+            $('#burger').addClass('fa fa-bars')
+        }
+
         $('nav.menu-mobile ul').slideToggle()
     })
 </script>
