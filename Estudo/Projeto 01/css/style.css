@@ -108,7 +108,12 @@ nav.menu-mobile li {
     border-bottom: 1px solid black;
 }
 
+nav.menu-mobile li.selected {
+    background-color: rgba(14, 143, 155, 0.2);
+}
+
 nav.menu-mobile a {
+    display: block; /*para aceitar o clique não apenas no nome, mas sim no background*/
     text-decoration: none;
     color: black;
     font-weight: lighter;
