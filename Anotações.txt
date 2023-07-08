@@ -792,3 +792,15 @@ Alinhando divs dentro de uma div:
     .avatar-box > div { /*A div que contem as outras*/
         vertical-align: middle;
     }
+
+Menu mobile:
+
+html:
+
+
+
+css:
+
+
+
+javascript(jquery):

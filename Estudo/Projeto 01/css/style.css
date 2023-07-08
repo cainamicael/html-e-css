@@ -79,7 +79,43 @@ nav.menu-desktop a {
 }
 
 nav.menu-desktop a:hover {
-    text-decoration: overline;
+    color: #52aaa7;
+}
+
+/*menu mobile*/
+nav.menu-mobile {
+    display: none;
+    float: right;
+}
+
+nav.menu-mobile h2 {
+    cursor: pointer;
+}
+
+nav.menu-mobile ul {
+    /* display: none; */
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 3;
+    text-align: center;
+}
+
+nav.menu-mobile li {
+    padding: 8px 0;
+    border-bottom: 1px solid black;
+}
+
+nav.menu-mobile a {
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+    letter-spacing: 1.3px;
+}
+
+nav.menu-mobile a:hover {
     color: #52aaa7;
 }
 
@@ -382,5 +418,15 @@ footer.footer2 {
 
     footer.footer1 {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px){
+    nav.menu-desktop {
+        display: none;
+    }
+
+    nav.menu-mobile {
+        display: block;
     }
 }
