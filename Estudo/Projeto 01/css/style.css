@@ -540,6 +540,90 @@ section.adicionais {
     font-weight: lighter;
 }
 
+/*Página de contato*/
+/*sessão 2*/
+section.contato {
+    padding: 40px 0;
+}
+
+.contato .formulario {
+    width: 75%;
+    float: left;
+    padding: 0 20px;
+}
+
+.formulario .box-contato {
+    width: 100%;
+    font-size: 12px;
+    background-color: #ccc;
+    border-radius: 8px;
+}
+
+.formulario .box-contato p {
+    color: rgb(124, 122, 122);
+    text-align: center;
+    padding: 10px;
+}
+
+.formulario form input, textarea {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #cccccc87;
+}
+
+.formulario form input[name=nome], input[name=sobrenome] {
+    width: 50%;
+}
+
+.formulario form input[name=email] {
+    width: 100%;
+}
+
+.formulario form textarea {
+    width: 100%;
+    min-height: 300px;
+}
+
+.formulario input[type=submit] {
+    width: 30%;
+    background-color: #52aaa7;
+    color: white;
+    border: 0;
+}
+
+.contato .informacoes {
+    width: 25%;
+    float: left;
+}
+
+.informacoes i {
+    padding: 0 10px;
+}
+
+.informacoes h2 {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.informacoes h2 i {
+    padding-left: 0;
+}
+
+.informacoes p {
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+
+.informacoes .telefone {
+    width: 100%;
+    padding: 10px;
+    background-color: #52aaa7;
+    margin: 10px 0;
+    color: white;
+    font-weight: lighter;
+    border-radius: 8px;
+}
+
 
 /*responsivo*/
 @media screen and (max-width: 768px){
@@ -583,6 +667,15 @@ section.adicionais {
         padding: 10px;
         max-width: 100%;
         margin-bottom: 20px;
+    }
+
+    .contato .formulario {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contato .informacoes {
+        width: 100%;
     }
 }
 
