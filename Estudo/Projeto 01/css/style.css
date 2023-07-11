@@ -446,12 +446,15 @@ section.parallax {
     background-size: cover;
     padding: 40px;
     background-attachment: fixed;
+    position: relative;
 }
 
 .parallax > div.container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    z-index: 5;
 }
 
 .parallax h3 {
@@ -473,36 +476,41 @@ section.parallax {
 
 /*section4*/
 section.cards {
-    padding: 40px;
+    padding: 40px 0;
     position: relative;
 }
 
-.cards .line-text {
-    display: block;
+section.cards div.line-text {
+    margin-bottom: 30px;
+    position: absolute;
 }
 
 .cards .card {
+    margin-top: 60px;
+    padding: 0 20px;
     display: flex;
-    margin-top: 20px;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
 }
 
-.cards .img-card {
+.card .img-card {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #1d6c64;
+    background-color: black;
+}
+
+.card h4{
+    padding: 10px;
+    font-weight: normal;
 }
 
 .card p {
-    padding: 10px;
     font-weight: lighter;
-    font-size: 15px;
 }
+
 
 /*responsivo*/
 @media screen and (max-width: 768px){
@@ -557,4 +565,5 @@ section.cards {
     nav.menu-mobile {
         display: block;
     }
+
 }
