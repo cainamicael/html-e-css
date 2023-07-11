@@ -510,6 +510,18 @@ section.cards {
     font-size: 15px;
 }
 
+/*sessao5*/
+section.adicionais {
+    padding: 40px 0;
+    background-color: rgb(225, 225, 225);
+}
+
+.nossa-historia p {
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
 
 /*responsivo*/
 @media screen and (max-width: 768px){
