@@ -109,7 +109,7 @@ nav.menu-mobile li {
 }
 
 nav.menu-mobile li.selected {
-    background-color: rgba(14, 143, 155, 0.2);
+    background-color: #cccccc39;
     text-decoration: none;
 }
 
